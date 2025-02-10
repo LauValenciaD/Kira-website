@@ -1,0 +1,58 @@
+#inputModalSearch {
+	max-width: 320px;
+}
+
+/* media queries */
+
+@media (max-width: 1000px) {
+	.carrusel-desktop {
+		display: none;
+	}
+
+	.carrusel-movil {
+		display: block;
+	}
+	#carousel-second {
+		background: #6f7784;
+	}
+	#carousel-third {
+		background: #cbcbd3;
+	}
+	#carousel-second .text-red {
+		color: white;
+	}
+}
+
+/* pequeño*/
+@media (min-width: 576px) {
+	.container-carousel .h1 {
+		font-size: 1em !important;
+	}
+}
+
+/* mediano*/
+@media (min-width: 768px) {
+	#container_main_nav .navbar-nav {
+		max-width: 450px;
+	}
+}
+
+/* grande*/
+@media (min-width: 1200px) {
+	#container_main_nav .navbar-nav {
+		max-width: 550px;
+	}
+	#container-carousel .carousel-item {
+		min-height: 30rem !important;
+	}
+	.product-wap .h3,
+	.product-wap li,
+	.product-wap i,
+	.product-wap p {
+		font-size: 18px !important;
+	}
+	.product-wap .product-color-dot {
+		width: 12px;
+		height: 12px;
+	}
+}
