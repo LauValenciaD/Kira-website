@@ -28,209 +28,211 @@
   </head>
 
   <body>
-    <!-- header -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow">
-      <!-- logo -->
-      <div class="container d-flex justify-content-between align-items-center">
-        <a class="navbar-brand logo" href="index.html"
-          ><img
-            class="img-fluid"
-            src="./assets/img/KIRA_logo.png"
-            alt=""
-            id="logo"
-        /></a>
-               <!--  menu collapse -->
-               <div
-               class="collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between"
-               id="container_main_nav"
-             >
-               <div class="flex-fill">
-                 <ul class="nav navbar-nav mx-lg-auto">
-                   <li class="nav-item">
-                     <a class="nav-link nav-title" href="index.html">NUEVO</a>
-                   </li>
-                   <li class="nav-item dropdown">
-                     <a
-                       href="#"
-                       class="nav-link nav-title dropdown-toggle"
-                       data-bs-toggle="dropdown"
-                     >
-                       ROPA
-                     </a>
-                     <div class="dropdown-menu rounded-0 m-0">
-                       <a href="#" class="dropdown-item">Camisetas y tops</a>
-                       <a href="#" class="dropdown-item">Vestidos</a>
-                       <a href="#" class="dropdown-item">Pantalones y jeans</a>
-                       <a href="#" class="dropdown-item">Monos</a>
-                       <a href="#" class="dropdown-item">Abrigos y chaquetas</a>
-                       <a href="#" class="dropdown-item">Faldas</a>
-                       <a href="#" class="dropdown-item">Punto</a>
-                       <a href="#" class="dropdown-item">Ver todo</a>
-                     </div>
-                   </li>
-                   <li class="nav-item dropdown">
-                     <a
-                       href="#"
-                       class="nav-link nav-title dropdown-toggle"
-                       data-bs-toggle="dropdown"
-                     >
-                       COLECCIONES
-                     </a>
-                     <div class="dropdown-menu rounded-0 m-0">
-                       <a href="#" class="dropdown-item">Bodas</a>
-                       <a href="#" class="dropdown-item">Comuniones y bautizos</a>
-                       <a href="#" class="dropdown-item">Fiesta</a>
-                       <a href="#" class="dropdown-item">Casual</a>
-                       <a href="#" class="dropdown-item">Ver todo</a>
-                     </div>
-                   </li>
-                   <li class="nav-item">
-                     <a class="nav-link nav-title" href="#">ACCESORIOS</a>
-                   </li>
-                 </ul>
-               </div>
-             </div>
+		<!-- header -->
+		<nav class="navbar navbar-expand-lg navbar-light shadow">
+			<!-- logo -->
+			<div class="container d-flex justify-content-between align-items-center">
+				<a class="navbar-brand logo" href="index.html"
+					><img
+						class="img-fluid"
+						src="./assets/img/KIRA_logo.png"
+						alt=""
+						id="logo"
+				/></a>
+				<!--  menu collapse -->
+				<div
+					class="collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between"
+					id="container_main_nav"
+				>
+					<div class="flex-fill">
+						<ul class="nav navbar-nav mx-lg-auto">
+							<li class="nav-item">
+								<a class="nav-link nav-title" href="index.html">NUEVO</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									href="#"
+									class="nav-link nav-title dropdown-toggle"
+									data-bs-toggle="dropdown"
+								>
+									ROPA
+								</a>
+								<div class="dropdown-menu rounded-0 m-0">
+									<a href="catalogo.html" class="dropdown-item">Camisetas y tops</a>
+									<a href="catalogo.html" class="dropdown-item">Vestidos</a>
+									<a href="catalogo.html" class="dropdown-item">Pantalones y jeans</a>
+									<a href="catalogo.html" class="dropdown-item">Monos</a>
+									<a href="catalogo.html" class="dropdown-item">Abrigos y chaquetas</a>
+									<a href="catalogo.html" class="dropdown-item">Faldas</a>
+									<a href="catalogo.html" class="dropdown-item">Punto</a>
+									<a href="catalogo.html" class="dropdown-item">Ver todo</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									href="#"
+									class="nav-link nav-title dropdown-toggle"
+									data-bs-toggle="dropdown"
+								>
+									COLECCIONES
+								</a>
+								<div class="dropdown-menu rounded-0 m-0">
+									<a href="catalogo.html" class="dropdown-item">Bodas</a>
+									<a href="catalogo.html" class="dropdown-item">Comuniones y bautizos</a>
+									<a href="catalogo.html" class="dropdown-item">Fiesta</a>
+									<a href="catalogo.html" class="dropdown-item">Casual</a>
+									<a href="catalogo.html" class="dropdown-item">Ver todo</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link nav-title" href="catalogo.html">ACCESORIOS</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 
+				<!-- Modal para el menú en móvil -->
+				<div
+					class="modal fade"
+					id="mobileMenu"
+					tabindex="-1"
+					aria-hidden="true"
+				>
+					<div class="modal-dialog modal-fullscreen">
+						<div class="modal-content">
+							<div class="modal-body text-left text-dark">
+								<div class="w-100 pt-1 mb-5">
+									<button
+										type="button"
+										class="btn-close"
+										data-bs-dismiss="modal"
+										aria-label="Close"
+									></button>
+								</div>
+								<ul class="list-unstyled">
+									<li><a href="index.html" class="fw-bold">NUEVO</a></li>
 
-<!-- Modal para el menú en móvil -->
-<div class="modal fade" id="mobileMenu" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-body text-left text-dark">
-  <div class="w-100 pt-1 mb-5">
-    <button
-      type="button"
-      class="btn-close"
-      data-bs-dismiss="modal"
-      aria-label="Close"
-    ></button>
-  </div>
-  <ul class="list-unstyled">
-    <li><a href="index.html" class="fw-bold">NUEVO</a></li>
-  
-    <li>
-      <a href="producto.html" class="fw-bold">ROPA</a>
-      <ul class="list-unstyled ps-3">
-        <li><a href="#">Camisetas y tops</a></li>
-        <li><a href="#">Vestidos</a></li>
-        <li><a href="#">Pantalones y jeans</a></li>
-        <li><a href="#">Monos</a></li>
-        <li><a href="#">Abrigos y chaquetas</a></li>
-        <li><a href="#">Faldas</a></li>
-        <li><a href="#">Punto</a></li>
-        <li><a href="#">Ver todo</a></li>
-      </ul>
-    </li>
-  
-    <li>
-      <a href="#" class="fw-bold">COLECCIONES</a>
-      <ul class="list-unstyled ps-3">
-        <li><a href="#">Bodas</a></li>
-        <li><a href="#">Comuniones y bautizos</a></li>
-        <li><a href="#">Fiesta</a></li>
-        <li><a href="#">Casual</a></li>
-        <li><a href="#">Ver todo</a></li>
-      </ul>
-    </li>
-  
-    <li><a href="#" class="fw-bold">ACCESORIOS</a></li>
-  </ul>
-  
-  </div>
-  </div>
-</div>
-</div>
+									<li>
+										<a href="producto.html" class="fw-bold">ROPA</a>
+										<ul class="list-unstyled ps-3">
+											<li><a href="catalogo.html">Camisetas y tops</a></li>
+											<li><a href="catalogo.html">Vestidos</a></li>
+											<li><a href="catalogo.html">Pantalones y jeans</a></li>
+											<li><a href="catalogo.html">Monos</a></li>
+											<li><a href="catalogo.html">Abrigos y chaquetas</a></li>
+											<li><a href="catalogo.html">Faldas</a></li>
+											<li><a href="catalogo.html">Punto</a></li>
+											<li><a href="catalogo.html">Ver todo</a></li>
+										</ul>
+									</li>
 
-     
-             <!-- barra de busqueda -->
-             <div class="search-container ms-lg-3 d-none d-lg-block">
-               <form action="" method="get">
-                 <div class="input-group">
-                   <input
-                     type="text"
-                     class="form-control nav-title"
-                     placeholder="Buscar..."
-                   />
-                   <div class="input-group-text">
-                     <i class="fa fa-fw fa-search"></i>
-                   </div>
-                 </div>
-               </form>
-             </div>
-        <!-- grupo de iconos -->
-                      
-        <div class="navbar align-self-center d-flex flex-nowrap">
-           <!-- Botón de menú para móvil -->
-                     
-           <a
-           class="nav-icon d-inline d-lg-none mr-2"
-           href="#"
-           data-bs-toggle="modal"
-           data-bs-target="#mobileMenu"
-           id="MobileMenuIcon"
-         >
-         <i class="fas fa-bars text-dark"></i>
-         </a>
-          <a
-            class="nav-icon d-inline d-lg-none mr-1"
-            href="#"
-            data-bs-toggle="modal"
-            data-bs-target="#container_search"
-            id="inputMobileSearch"
-          >
-            <i class="fa fa-fw fa-search text-dark"></i>
-          </a>
-          <a class="nav-icon position-relative text-decoration-none" href="#">
-            <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-          </a>
-          <a class="nav-icon position-relative text-decoration-none" href="#">
-            <i class="fa fa-fw fa-user text-dark mr-3"></i>
-          </a>
-        </div>
-      </div>
-    </nav>
+									<li>
+										<a href="#" class="fw-bold">COLECCIONES</a>
+										<ul class="list-unstyled ps-3">
+											<li><a href="catalogo.html">Bodas</a></li>
+											<li><a href="catalogo.html">Comuniones y bautizos</a></li>
+											<li><a href="catalogo.html">Fiesta</a></li>
+											<li><a href="catalogo.html">Casual</a></li>
+											<li><a href="catalogo.html">Ver todo</a></li>
+										</ul>
+									</li>
 
-    <!-- fin header -->
+									<li><a href="catalogo.html" class="fw-bold">ACCESORIOS</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
 
-    <!-- barra de búsqueda desplegable en móvil -->
-    <div
-      class="modal fade bg-white"
-      id="container_search"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg">
-        <div class="w-100 pt-1 mb-5 text-right">
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="search-container big">
-          <form
-            action=""
-            method="get"
-            class="modal-content modal-body border-0 p-0"
-          >
-            <div class="input-group ml-2">
-              <input
-                type="text"
-                class="form-control"
-                id="inputModalSearch"
-                name="q"
-                placeholder="Buscar..."
-              />
-              <button type="submit" class="input-group-text">
-                <i class="fa fa-fw fa-search text-white"></i>
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
+				<!-- barra de busqueda -->
+				<div class="search-container ms-lg-3 d-none d-lg-block">
+					<form action="#" method="get">
+						<div class="input-group">
+							<input
+								type="text"
+								class="form-control nav-title"
+								placeholder="Buscar..."
+							/>
+							<div class="input-group-text">
+								<i class="fa fa-fw fa-search"></i>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- grupo de iconos -->
+
+				<div class="navbar align-self-center d-flex flex-nowrap">
+					<!-- Botón de menú para móvil -->
+
+					<form
+						class="nav-icon d-inline d-lg-none"
+						action="#" method="get"
+						data-bs-toggle="modal"
+						data-bs-target="#mobileMenu"
+						id="MobileMenuIcon"
+					>
+						<i class="fas fa-bars text-dark"></i>
+						<span
+						class="nav-icon d-inline d-lg-none mr-1"
+						href="#"
+						data-bs-toggle="modal"
+						data-bs-target="#container_search"
+						id="inputMobileSearch"
+					>
+						<i class="fa fa-fw fa-search text-dark"></i>
+					</span> </form>
+					<a class="nav-icon position-relative text-decoration-none" href="carrito.html">
+						<i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+					</a>
+					<a class="nav-icon position-relative text-decoration-none" href="perfil.html">
+						<i class="fa fa-fw fa-user text-dark mr-3"></i>
+					</a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- fin header -->
+
+		<!-- barra de búsqueda desplegable en móvil -->
+		<div
+			class="modal fade bg-white"
+			id="container_search"
+			tabindex="-1"
+			dialog
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-lg">
+				<div class="w-100 pt-1 mb-5 text-right">
+					<button
+						type="button"
+						class="btn-close"
+						data-bs-dismiss="modal"
+						aria-label="Cerrar"
+					></button>
+				</div>
+				<div class="search-container big">
+					<form
+						action="#"
+						method="get"
+						class="modal-content modal-body border-0 p-0"
+					>
+						<div class="input-group mb-2">
+							<input
+								type="text"
+								class="form-control"
+								id="inputModalSearch"
+								name="q"
+								placeholder="Buscar..."
+							/>
+							<button type="submit" class="input-group-text">
+								<i class="fa fa-fw fa-search text-white"></i>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<main>
 
     <!-- carrusel -->
     <div id="container-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -800,9 +802,9 @@
         </div>
       </div>
     </section>
-
+  </main>
     <!-- ventajas -->
-    <div class="container-fluid pt-5">
+    <aside class="container-fluid pt-5">
       <div class="row px-xl-5 pb-3">
         <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
           <div
@@ -841,7 +843,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </aside>
     <!-- fin ventajas -->
     <!-- footer -->
 
