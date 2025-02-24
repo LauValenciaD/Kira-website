@@ -59,24 +59,35 @@
 
     // Poner la foto del producto en grande al hacer clic
     $(".img-fluid.mini").click(function () {
-      var this_src = $(this).attr("src"); // Obtener la fuente de la miniatura clickeada
+      let this_src = $(this).attr("src"); // Obtener la fuente de la miniatura clickeada
       $("#product-detail").attr("src", this_src); // Cambiar la imagen principal
     });
 
     // Cambiar cantidad
     $("#btn-minus").click(function () {
-      var val = $("#var-value").html();
+      let val = $("#var-value").html();
       val = val == "1" ? val : val - 1;
       $("#var-value").html(val);
       $("#product-quanity").val(val);
       return false;
     });
     $("#btn-plus").click(function () {
-      var val = $("#var-value").html();
+      let val = $("#var-value").html();
       val++;
       $("#var-value").html(val);
       $("#product-quanity").val(val);
       return false;
+    });
+    //Cambiar Cantidad en el carrito
+    $(".quantity .btn-sel-plus").click(function () {
+      let val = $(this).siblings(".quantity-val").html();
+      val++;
+      $(this).siblings(".quantity-val").html(val);
+    });
+    $(".quantity .btn-sel-minus").click(function () {
+      let val = $(this).siblings(".quantity-val").html();
+      val = val == "1" ? val : val - 1;
+      $(this).siblings(".quantity-val").html(val);
     });
     // Seleccionar talla
     $(".btn-size").click(function () {
