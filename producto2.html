@@ -1,817 +1,839 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<title>Kira Boutique</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <title>Kira Boutique</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link
-			rel="shortcut icon"
-			type="image/x-icon"
-			href="assets/img/kirablack.png"
-		/>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/kirablack.png"
+    />
 
-		<link rel="stylesheet" href="assets/css/bootstrap.css" />
-		<link rel="stylesheet" href="assets/css/slick.css" />
-		<link rel="stylesheet" href="assets/css/slick-theme.css" />
-		<link rel="stylesheet" href="assets/css/styles.css" />
-		<link rel="stylesheet" href="assets/css/styles-responsive.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles-responsive.css" />
 
-		<!-- carga de fuentes -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="assets/css/fontawesome.min.css" />
-	</head>
+    <!-- carga de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+  </head>
 
-	<body>
-		<!-- header -->
-		<nav class="navbar navbar-expand-lg navbar-light shadow">
-			<!-- logo -->
-			<div class="container d-flex justify-content-between align-items-center">
-				<a class="navbar-brand logo" href="index.html"
-					><img
-						class="img-fluid"
-						src="./assets/img/KIRA_logo.png"
-						alt=""
-						id="logo"
-				/></a>
-				<!--  menu collapse -->
-				<div
-					class="collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between"
-					id="container_main_nav"
-				>
-					<div class="flex-fill">
-						<ul class="nav navbar-nav mx-lg-auto">
-							<li class="nav-item">
-								<a class="nav-link nav-title" href="index.html">NUEVO</a>
-							</li>
-							<li class="nav-item dropdown">
-								<a
-									href="#"
-									class="nav-link nav-title dropdown-toggle"
-									data-bs-toggle="dropdown"
-								>
-									ROPA
-								</a>
-								<div class="dropdown-menu rounded-0 m-0">
-									<a href="#" class="dropdown-item">Camisetas y tops</a>
-									<a href="#" class="dropdown-item">Vestidos</a>
-									<a href="#" class="dropdown-item">Pantalones y jeans</a>
-									<a href="#" class="dropdown-item">Monos</a>
-									<a href="#" class="dropdown-item">Abrigos y chaquetas</a>
-									<a href="#" class="dropdown-item">Faldas</a>
-									<a href="#" class="dropdown-item">Punto</a>
-									<a href="#" class="dropdown-item">Ver todo</a>
-								</div>
-							</li>
-							<li class="nav-item dropdown">
-								<a
-									href="#"
-									class="nav-link nav-title dropdown-toggle"
-									data-bs-toggle="dropdown"
-								>
-									COLECCIONES
-								</a>
-								<div class="dropdown-menu rounded-0 m-0">
-									<a href="#" class="dropdown-item">Bodas</a>
-									<a href="#" class="dropdown-item">Comuniones y bautizos</a>
-									<a href="#" class="dropdown-item">Fiesta</a>
-									<a href="#" class="dropdown-item">Casual</a>
-									<a href="#" class="dropdown-item">Ver todo</a>
-								</div>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link nav-title" href="#">ACCESORIOS</a>
-							</li>
-						</ul>
-					</div>
-				</div>
+  <body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+      <!-- logo -->
+      <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand logo" href="index.html"
+          ><img
+            class="img-fluid"
+            src="./assets/img/KIRA_logo.png"
+            alt=""
+            id="logo"
+        /></a>
+        <!--  menu collapse -->
+        <div
+          class="collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between"
+          id="container_main_nav"
+        >
+          <div class="flex-fill">
+            <ul class="nav navbar-nav mx-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link nav-title" href="index.html">NUEVO</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link nav-title dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                >
+                  ROPA
+                </a>
+                <div class="dropdown-menu rounded-0 m-0">
+                  <a href="catalogo.html" class="dropdown-item"
+                    >Camisetas y tops</a
+                  >
+                  <a href="catalogo.html" class="dropdown-item">Vestidos</a>
+                  <a href="catalogo.html" class="dropdown-item"
+                    >Pantalones y jeans</a
+                  >
+                  <a href="catalogo.html" class="dropdown-item">Monos</a>
+                  <a href="catalogo.html" class="dropdown-item"
+                    >Abrigos y chaquetas</a
+                  >
+                  <a href="catalogo.html" class="dropdown-item">Faldas</a>
+                  <a href="catalogo.html" class="dropdown-item">Punto</a>
+                  <a href="catalogo.html" class="dropdown-item">Ver todo</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link nav-title dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                >
+                  COLECCIONES
+                </a>
+                <div class="dropdown-menu rounded-0 m-0">
+                  <a href="catalogo.html" class="dropdown-item">Bodas</a>
+                  <a href="catalogo.html" class="dropdown-item"
+                    >Comuniones y bautizos</a
+                  >
+                  <a href="catalogo.html" class="dropdown-item">Fiesta</a>
+                  <a href="catalogo.html" class="dropdown-item">Casual</a>
+                  <a href="catalogo.html" class="dropdown-item">Ver todo</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-title" href="catalogo.html"
+                  >ACCESORIOS</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
 
-				<!-- Modal para el menú en móvil -->
-				<div
-					class="modal fade"
-					id="mobileMenu"
-					tabindex="-1"
-					aria-hidden="true"
-				>
-					<div class="modal-dialog modal-fullscreen">
-						<div class="modal-content">
-							<div class="modal-body text-left text-dark">
-								<div class="w-100 pt-1 mb-5">
-									<button
-										type="button"
-										class="btn-close"
-										data-bs-dismiss="modal"
-										aria-label="Close"
-									></button>
-								</div>
-								<ul class="list-unstyled">
-									<li><a href="index.html" class="fw-bold">NUEVO</a></li>
+        <!-- Modal para el menú en móvil -->
+        <div
+          class="modal fade"
+          id="mobileMenu"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-body text-left text-dark">
+                <div class="w-100 pt-1 mb-5">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <ul class="list-unstyled">
+                  <li><a href="index.html" class="fw-bold">NUEVO</a></li>
 
-									<li>
-										<a href="producto.html" class="fw-bold">ROPA</a>
-										<ul class="list-unstyled ps-3">
-											<li><a href="#">Camisetas y tops</a></li>
-											<li><a href="#">Vestidos</a></li>
-											<li><a href="#">Pantalones y jeans</a></li>
-											<li><a href="#">Monos</a></li>
-											<li><a href="#">Abrigos y chaquetas</a></li>
-											<li><a href="#">Faldas</a></li>
-											<li><a href="#">Punto</a></li>
-											<li><a href="#">Ver todo</a></li>
-										</ul>
-									</li>
+                  <li>
+                    <a href="producto.html" class="fw-bold">ROPA</a>
+                    <ul class="list-unstyled ps-3">
+                      <li><a href="catalogo.html">Camisetas y tops</a></li>
+                      <li><a href="catalogo.html">Vestidos</a></li>
+                      <li><a href="catalogo.html">Pantalones y jeans</a></li>
+                      <li><a href="catalogo.html">Monos</a></li>
+                      <li><a href="catalogo.html">Abrigos y chaquetas</a></li>
+                      <li><a href="catalogo.html">Faldas</a></li>
+                      <li><a href="catalogo.html">Punto</a></li>
+                      <li><a href="catalogo.html">Ver todo</a></li>
+                    </ul>
+                  </li>
 
-									<li>
-										<a href="#" class="fw-bold">COLECCIONES</a>
-										<ul class="list-unstyled ps-3">
-											<li><a href="#">Bodas</a></li>
-											<li><a href="#">Comuniones y bautizos</a></li>
-											<li><a href="#">Fiesta</a></li>
-											<li><a href="#">Casual</a></li>
-											<li><a href="#">Ver todo</a></li>
-										</ul>
-									</li>
+                  <li>
+                    <a href="#" class="fw-bold">COLECCIONES</a>
+                    <ul class="list-unstyled ps-3">
+                      <li><a href="catalogo.html">Bodas</a></li>
+                      <li><a href="catalogo.html">Comuniones y bautizos</a></li>
+                      <li><a href="catalogo.html">Fiesta</a></li>
+                      <li><a href="catalogo.html">Casual</a></li>
+                      <li><a href="catalogo.html">Ver todo</a></li>
+                    </ul>
+                  </li>
 
-									<li><a href="#" class="fw-bold">ACCESORIOS</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
+                  <li>
+                    <a href="catalogo.html" class="fw-bold">ACCESORIOS</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				<!-- barra de busqueda -->
-				<div class="search-container ms-lg-3 d-none d-lg-block">
-					<form action="" method="get">
-						<div class="input-group">
-							<input
-								type="text"
-								class="form-control nav-title"
-								placeholder="Buscar..."
-							/>
-							<div class="input-group-text">
-								<i class="fa fa-fw fa-search"></i>
-							</div>
-						</div>
-					</form>
-				</div>
-				<!-- grupo de iconos -->
+        <!-- barra de busqueda -->
+        <div class="search-container ms-lg-3 d-none d-lg-block">
+          <form action="#" method="get">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control nav-title"
+                placeholder="Buscar..."
+              />
+              <div class="input-group-text">
+                <i class="fa fa-fw fa-search"></i>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- grupo de iconos -->
 
-				<div class="navbar align-self-center d-flex flex-nowrap">
-					<!-- Botón de menú para móvil -->
+        <div class="navbar align-self-center d-flex flex-nowrap">
+          <!-- Botón de menú para móvil -->
 
-					<a
-						class="nav-icon d-inline d-lg-none mr-2"
-						href="#"
-						data-bs-toggle="modal"
-						data-bs-target="#mobileMenu"
-						id="MobileMenuIcon"
-					>
-						<i class="fas fa-bars text-dark"></i>
-					</a>
-					<a
-						class="nav-icon d-inline d-lg-none mr-1"
-						href="#"
-						data-bs-toggle="modal"
-						data-bs-target="#container_search"
-						id="inputMobileSearch"
-					>
-						<i class="fa fa-fw fa-search text-dark"></i>
-					</a>
-					<a class="nav-icon position-relative text-decoration-none" href="#">
-						<i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-					</a>
-					<a class="nav-icon position-relative text-decoration-none" href="#">
-						<i class="fa fa-fw fa-user text-dark mr-3"></i>
-					</a>
-				</div>
-			</div>
-		</nav>
+          <form
+            class="nav-icon d-inline d-lg-none"
+            action="#"
+            method="get"
+            data-bs-toggle="modal"
+            data-bs-target="#mobileMenu"
+            id="MobileMenuIcon"
+          >
+            <i class="fas fa-bars text-dark"></i>
+            <span
+              class="nav-icon d-inline d-lg-none mr-1"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#container_search"
+              id="inputMobileSearch"
+            >
+              <i class="fa fa-fw fa-search text-dark"></i>
+            </span>
+          </form>
+          <a
+            class="nav-icon position-relative text-decoration-none"
+            href="carrito.html"
+          >
+            <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+          </a>
+          <a
+            class="nav-icon position-relative text-decoration-none"
+            href="perfil.html"
+          >
+            <i class="fa fa-fw fa-user text-dark mr-3"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
 
-		<!-- fin header -->
+    <!-- fin header -->
 
-		<!-- barra de búsqueda desplegable en móvil -->
-		<div
-			class="modal fade bg-white"
-			id="container_search"
-			tabindex="-1"
-			role="dialog"
-			aria-labelledby="exampleModalLabel"
-			aria-hidden="true"
-		>
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="w-100 pt-1 mb-5 text-right">
-					<button
-						type="button"
-						class="btn-close"
-						data-bs-dismiss="modal"
-						aria-label="Close"
-					></button>
-				</div>
-				<div class="search-container big">
-					<form
-						action=""
-						method="get"
-						class="modal-content modal-body border-0 p-0"
-					>
-						<div class="input-group mb-2">
-							<input
-								type="text"
-								class="form-control"
-								id="inputModalSearch"
-								name="q"
-								placeholder="Buscar..."
-							/>
-							<button type="submit" class="input-group-text">
-								<i class="fa fa-fw fa-search text-white"></i>
-							</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-		<!-- producto -->
-		<section class="bg-white">
-			<div class="container pb-5">
-				<div class="row">
-					<!-- columna de imágenes pequeñas -->
-					<div class="col-lg-1 mt-5 carrusel-desktop">
-						<div class="d-flex flex-column align-items-start gap-3">
-							<img
-								class="img-fluid mini"
-								src="assets/img/7.jpg"
-								alt="Miniatura 1"
-							/>
-							<img
-								class="img-fluid mini"
-								src="assets/img/7recortado2.jpg"
-								alt="Miniatura 1"
-							/>
-							<img
-								class="img-fluid mini"
-								src="assets/img/7recortado3.jpg"
-								alt="Miniatura 2"
-							/>
-							<img
-								class="img-fluid mini"
-								src="assets/img/7recortado4.jpg"
-								alt="Miniatura 3"
-							/>
-						</div>
-					</div>
+    <!-- barra de búsqueda desplegable en móvil -->
+    <div
+      class="modal fade bg-white"
+      id="container_search"
+      tabindex="-1"
+      dialog
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="w-100 pt-1 mb-5 text-right">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Cerrar"
+          ></button>
+        </div>
+        <div class="search-container big">
+          <form
+            action="#"
+            method="get"
+            class="modal-content modal-body border-0 p-0"
+          >
+            <div class="input-group mb-2">
+              <input
+                type="text"
+                class="form-control"
+                id="inputModalSearch"
+                name="q"
+                placeholder="Buscar..."
+              />
+              <button type="submit" class="input-group-text">
+                <i class="fa fa-fw fa-search text-white"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <main>
+      <!-- producto -->
+      <section class="bg-white">
+        <div class="container pb-5">
+          <div class="row">
+            <!-- columna de imágenes pequeñas -->
+            <div class="col-lg-1 mt-5 carrusel-desktop">
+              <div class="d-flex flex-column align-items-start gap-3">
+                <img
+                  class="img-fluid mini"
+                  src="assets/img/7.jpg"
+                  alt="Miniatura 1"
+                />
+                <img
+                  class="img-fluid mini"
+                  src="assets/img/7recortado2.jpg"
+                  alt="Miniatura 1"
+                />
+                <img
+                  class="img-fluid mini"
+                  src="assets/img/7recortado3.jpg"
+                  alt="Miniatura 2"
+                />
+                <img
+                  class="img-fluid mini"
+                  src="assets/img/7recortado4.jpg"
+                  alt="Miniatura 3"
+                />
+              </div>
+            </div>
 
-					<!-- imagen principal -->
-					<div class="col-lg-5 mt-5 carrusel-desktop">
-						<div class="card mb-3">
-							<img
-								class="card-img img-fluid"
-								src="assets/img/7.jpg"
-								alt="Producto principal"
-								id="product-detail"
-							/>
-						</div>
-					</div>
+            <!-- imagen principal -->
+            <div class="col-lg-5 mt-5 carrusel-desktop">
+              <div class="card mb-3">
+                <img
+                  class="card-img img-fluid"
+                  src="assets/img/7.jpg"
+                  alt="Producto principal"
+                  id="product-detail"
+                />
+              </div>
+            </div>
 
-					<!-- carrusel para movil -->
-					<div class="slider carrusel-movil mt-2">
-						<div>
-							<img
-								class="img-fluid p-1"
-								src="assets/img/7.jpg"
-								alt="Miniatura 1"
-							/>
-						</div>
-						<div>
-							<img
-								class="img-fluid p-1"
-								src="assets/img/7recortado2.jpg"
-								alt="Miniatura 2"
-							/>
-						</div>
-						<img
-							class="img-fluid p-1"
-							src="assets/img/7recortado3.jpg"
-							alt="Miniatura 3"
-						/>
-						<div>
-							<img
-								class="img-fluid p-1"
-								src="assets/img/7recortado4.jpg"
-								alt="Miniatura 4"
-							/>
-						</div>
-					</div>
+            <!-- carrusel para movil -->
+            <div class="slider carrusel-movil mt-2">
+              <div>
+                <img
+                  class="img-fluid p-1"
+                  src="assets/img/7.jpg"
+                  alt="Miniatura 1"
+                />
+              </div>
+              <div>
+                <img
+                  class="img-fluid p-1"
+                  src="assets/img/7recortado2.jpg"
+                  alt="Miniatura 2"
+                />
+              </div>
+              <img
+                class="img-fluid p-1"
+                src="assets/img/7recortado3.jpg"
+                alt="Miniatura 3"
+              />
+              <div>
+                <img
+                  class="img-fluid p-1"
+                  src="assets/img/7recortado4.jpg"
+                  alt="Miniatura 4"
+                />
+              </div>
+            </div>
 
-					<!-- descripción del producto -->
-					<div class="col-lg-6 mt-5">
-						<div class="card border-0">
-							<div class="card-body">
-								<h1 class="h1">Pantalón beis</h1>
+            <!-- descripción del producto -->
+            <div class="col-lg-6 mt-5">
+              <div class="card border-0">
+                <div class="card-body">
+                  <h1 class="h1">Pantalón beis</h1>
 
-								<p class="h3 py-2">
-									<span class="text-muted"><del>59,95€</del></span>
-									<span class="text-red font-weight-semi-bold">34,95€</span>
-									<span class="text-red">Ahorras 35€ (-41%)</span>
-								</p>
-								<!-- acordeon -->
-								<div
-									class="accordion accordion-flush mb-4"
-									id="accordionProduct"
-								>
-									<div class="accordion-item">
-										<h2 class="accordion-header" id="headingOne">
-											<button
-												class="accordion-button"
-												type="button"
-												data-bs-toggle="collapse"
-												data-bs-target="#collapseOne"
-												aria-expanded="true"
-												aria-controls="collapseOne"
-											>
-												Descripción:
-											</button>
-										</h2>
-										<div
-											id="collapseOne"
-											class="accordion-collapse collapse show"
-											aria-labelledby="headingOne"
-											data-bs-parent="#accordionProduct"
-										>
-											<div class="accordion-body">
-												Pantalón ancho de corte zanahoria, confeccionado con
-												tejido de mezcla de viscosa con estampado diagonal.
-												Tiene trabillas y bolsillos franceses. Lleva este
-												pantalón beis para un look informal de diario, y
-												combínalo con nuestra colección de prendas de punto y el
-												calzado de la colección. Todo el proceso de confección
-												de la prenda se ha llevado a cabo en Italia.
-											</div>
-										</div>
-									</div>
-									<div class="accordion-item">
-										<h2 class="accordion-header" id="headingTwo">
-											<button
-												class="accordion-button collapsed"
-												type="button"
-												data-bs-toggle="collapse"
-												data-bs-target="#collapseTwo"
-												aria-expanded="false"
-												aria-controls="collapseTwo"
-											>
-												Composición:
-											</button>
-										</h2>
-										<div
-											id="collapseTwo"
-											class="accordion-collapse collapse"
-											aria-labelledby="headingTwo"
-											data-bs-parent="#accordionProduct"
-										>
-											<div class="accordion-body">
-												92% Poliester. 8% Viscosa
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- fin acordeon -->
-								<ul class="list-inline">
-									<li class="list-inline-item">
-										<h6>Color:</h6>
-									</li>
-									<li class="list-inline-item">
-										<p><strong>Beis</strong></p>
-									</li>
-								</ul>
+                  <p class="h3 py-2">
+                    <span class="text-muted"><del>59,95€</del></span>
+                    <span class="text-red font-weight-semi-bold">34,95€</span>
+                    <span class="text-red">Ahorras 35€ (-41%)</span>
+                  </p>
+                  <!-- acordeon -->
+                  <div
+                    class="accordion accordion-flush mb-4"
+                    id="accordionProduct"
+                  >
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button
+                          class="accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          Descripción:
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionProduct"
+                      >
+                        <div class="accordion-body">
+                          Pantalón ancho de corte zanahoria, confeccionado con
+                          tejido de mezcla de viscosa con estampado diagonal.
+                          Tiene trabillas y bolsillos franceses. Lleva este
+                          pantalón beis para un look informal de diario, y
+                          combínalo con nuestra colección de prendas de punto y
+                          el calzado de la colección. Todo el proceso de
+                          confección de la prenda se ha llevado a cabo en
+                          Italia.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          Composición:
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionProduct"
+                      >
+                        <div class="accordion-body">
+                          92% Poliester. 8% Viscosa
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- fin acordeon -->
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <h6>Color:</h6>
+                    </li>
+                    <li class="list-inline-item">
+                      <p><strong>Beis</strong></p>
+                    </li>
+                  </ul>
 
-								<form action="" method="POST">
-									<input type="hidden" name="product-title" />
-									<div class="row">
-										<div class="col-auto">
-											<ul class="list-inline pb-3">
-												<li class="list-inline-item">
-													TALLA
-													<input
-														type="hidden"
-														name="product-size"
-														id="product-size"
-														value="S"
-													/>
-												</li>
-												<li class="list-inline-item">
-													<span class="btn btn-pink btn-size">S</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="btn btn-pink btn-size">M</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="btn btn-pink btn-size">L</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="btn btn-pink btn-size">XL</span>
-												</li>
-											</ul>
-										</div>
-										<div class="col-auto">
-											<ul class="list-inline pb-3">
-												<li class="list-inline-item text-right">
-													CANTIDAD
-													<input
-														type="hidden"
-														name="product-quanity"
-														id="product-quanity"
-														value="1"
-													/>
-												</li>
-												<li class="list-inline-item">
-													<span class="btn btn-pink" id="btn-minus">-</span>
-												</li>
-												<li class="list-inline-item">
-													<span id="var-value">1</span>
-												</li>
-												<li class="list-inline-item">
-													<span class="btn btn-pink" id="btn-plus">+</span>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="row pb-3">
-										<div class="col d-grid">
-											<button
-												type="submit"
-												class="btn btn-pink btn-lg"
-												name="submit"
-												value="addtocard"
-											>
-												Añadir a la cesta
-											</button>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+                  <form action="" method="POST">
+                    <input type="hidden" name="product-title" />
+                    <div class="row">
+                      <div class="col-auto">
+                        <ul class="list-inline pb-3">
+                          <li class="list-inline-item">
+                            TALLA
+                            <input
+                              type="hidden"
+                              name="product-size"
+                              id="product-size"
+                              value="S"
+                            />
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="btn btn-pink btn-size">S</span>
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="btn btn-pink btn-size">M</span>
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="btn btn-pink btn-size">L</span>
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="btn btn-pink btn-size">XL</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-auto">
+                        <ul class="list-inline pb-3">
+                          <li class="list-inline-item text-right">
+                            CANTIDAD
+                            <input
+                              type="hidden"
+                              name="product-quanity"
+                              id="product-quanity"
+                              value="1"
+                            />
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="btn btn-pink" id="btn-minus">-</span>
+                          </li>
+                          <li class="list-inline-item">
+                            <span id="var-value">1</span>
+                          </li>
+                          <li class="list-inline-item">
+                            <span class="btn btn-pink" id="btn-plus">+</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row pb-3">
+                      <div class="col d-grid">
+                        <button
+                          type="submit"
+                          class="btn btn-pink btn-lg"
+                          name="submit"
+                          value="addtocard"
+                        >
+                          Añadir a la cesta
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-		<!-- lo más vendido -->
-		<section class="container-fluid pt-5 pr-5 pl-5">
-			<div class="text-center mb-4">
-				<h2>TE PUEDE INTERESAR</h2>
-			</div>
-			<!-- contenedor slick -->
-			<div class="slider">
-				<!-- tarjetas -->
-				<div>
-					<div class="card product-item small-card border-0 mb-4 mr-2 ml-2">
-						<div
-							class="card-header product-img position-relative overflow-hidden bg-transparent border p-0"
-						>
-							<a href="producto.html">
-								<img
-									class="img-fluid w-100"
-									src="assets/img/1recortado.jpg"
-									alt=""
-							/></a>
-						</div>
-						<div
-							class="card-body border-left border-right border-bottom text-center p-0 pt-4 pb-3"
-						>
-							<h6 class="text-truncate mb-3">Jeans straight wide</h6>
-							<div class="d-flex justify-content-center">
-								<h6 class="text-muted mr-2"><del>29,95€</del></h6>
-								<h6>24,95€</h6>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="card product-item small-card border-0 mb-4 mr-2 ml-2">
-						<div
-							class="card-header product-img position-relative overflow-hidden bg-transparent border p-0"
-						>
-							<a href="producto.html">
-								<img
-									class="img-fluid w-100"
-									src="assets/img/2recortado.JPG"
-									alt=""
-							/></a>
-						</div>
-						<div
-							class="card-body border-left border-right border-bottom text-center p-0 pt-4 pb-3"
-						>
-							<h6 class="text-truncate mb-3">Jeans straight efecto vintage</h6>
-							<div class="d-flex justify-content-center">
-								<h6 class="text-muted mr-2"><del>29,95€</del></h6>
-								<h6>24,95€</h6>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="card product-item small-card border-0 mb-4 mr-2 ml-2">
-						<div
-							class="card-header product-img position-relative overflow-hidden bg-transparent border p-0"
-						>
-							<a href="producto.html">
-								<img
-									class="img-fluid w-100"
-									src="assets/img/3recortado.jpg"
-									alt=""
-							/></a>
-						</div>
-						<div
-							class="card-body border-left border-right border-bottom text-center p-0 pt-4 pb-3"
-						>
-							<h6 class="text-truncate mb-3">Jeans straight wide</h6>
-							<div class="d-flex justify-content-center">
-								<h6 class="text-muted mr-2"><del>29,95€</del></h6>
-								<h6>24,95€</h6>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="card product-item small-card border-0 mb-4 mr-2 ml-2">
-						<div
-							class="card-header product-img position-relative overflow-hidden bg-transparent border p-0"
-						>
-							<a href="producto.html">
-								<img
-									class="img-fluid w-100"
-									src="assets/img/4recortado.jpg"
-									alt=""
-							/></a>
-						</div>
-						<div
-							class="card-body border-left border-right border-bottom text-center p-0 pt-4 pb-3"
-						>
-							<h6 class="text-truncate mb-3">Jeans pitillo tiro alto</h6>
-							<div class="d-flex justify-content-center">
-								<h6 class="text-muted mr-2"><del>29,95€</del></h6>
-								<h6>24,95€</h6>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="card product-item small-card border-0 mb-4 mr-2 ml-2">
-						<div
-							class="card-header product-img position-relative overflow-hidden bg-transparent border p-0"
-						>
-							<a href="producto1.html">
-								<img
-									class="img-fluid w-100"
-									src="assets/img/5recortado.jpg"
-									alt=""
-							/></a>
-						</div>
-						<div
-							class="card-body border-left border-right border-bottom text-center p-0 pt-4 pb-3"
-						>
-							<h6 class="text-truncate mb-3">Plumífero corto negro</h6>
-							<div class="d-flex justify-content-center">
-								<h6 class="text-muted mr-2"><del>142,40€</del></h6>
-								<h6>132,90€</h6>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="card product-item small-card border-0 mb-4 mr-2 ml-2">
-						<div
-							class="card-header product-img position-relative overflow-hidden bg-transparent border p-0"
-						>
-							<a href="producto.html">
-								<img
-									class="img-fluid w-100"
-									src="assets/img/6recortado.jpg"
-									alt=""
-							/></a>
-						</div>
-						<div
-							class="card-body border-left border-right border-bottom text-center p-0 pt-4 pb-3"
-						>
-							<h6 class="text-truncate mb-3">Abrigo tres en uno en camel</h6>
-							<div class="d-flex justify-content-center">
-								<h6 class="text-muted mr-2"><del>174,90€</del></h6>
-								<h6>109,90€</h6>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="card product-item small-card border-0 mb-4 mr-2 ml-2">
-						<div
-							class="card-header product-img position-relative overflow-hidden bg-transparent border p-0"
-						>
-							<a href="producto2.html">
-								<img
-									class="img-fluid w-100"
-									src="assets/img/7recortado.jpg"
-									alt=""
-							/></a>
-						</div>
-						<div
-							class="card-body border-left border-right border-bottom text-center p-0 pt-4 pb-3"
-						>
-							<h6 class="text-truncate mb-3">Pantalón beis</h6>
-							<div class="d-flex justify-content-center">
-								<h6 class="text-muted mr-2"><del>59,95€</del></h6>
-								<h6>34,95€</h6>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="card product-item small-card border-0 mb-4 mr-2 ml-2">
-						<div
-							class="card-header product-img position-relative overflow-hidden bg-transparent border p-0"
-						>
-							<a href="producto3.html">
-								<img
-									class="img-fluid w-100"
-									src="assets/img/8recortado.jpg"
-									alt=""
-							/></a>
-						</div>
-						<div
-							class="card-body border-left border-right border-bottom text-center p-0 pt-4 pb-3"
-						>
-							<h6 class="text-truncate mb-3">Pantalón negro con hebilla</h6>
-							<div class="d-flex justify-content-center">
-								<h6 class="text-muted mr-2"><del>49,95€</del></h6>
-								<h6>34,95€</h6>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+      <!-- lo más vendido -->
+      <section class="container-fluid pt-5 pr-5 pl-5">
+        <div class="text-center mb-4">
+          <h2>TE PUEDE INTERESAR</h2>
+        </div>
+        <!-- contenedor slick -->
+        <div class="slider">
+          <!-- tarjetas -->
+          <div>
+            <div class="card product-item small-card border-0 mb-4 mr-2 ml-2">
+              <div
+                class="card-header product-img position-relative overflow-hidden bg-transparent border p-0"
+              >
+                <a href="producto.html">
+                  <img
+                    class="img-fluid w-100"
+                    src="assets/img/1recortado.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div
+                class="card-body border-left border-right border-bottom text-center p-0 pt-4 pb-3"
+              >
+                <h6 class="text-truncate mb-3">Jeans straight wide</h6>
+                <div class="d-flex justify-content-center">
+                  <h6 class="text-muted mr-2"><del>29,95€</del></h6>
+                  <h6>24,95€</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card product-item small-card border-0 mb-4 mr-2 ml-2">
+              <div
+                class="card-header product-img position-relative overflow-hidden bg-transparent border p-0"
+              >
+                <a href="producto.html">
+                  <img
+                    class="img-fluid w-100"
+                    src="assets/img/2recortado.JPG"
+                    alt=""
+                /></a>
+              </div>
+              <div
+                class="card-body border-left border-right border-bottom text-center p-0 pt-4 pb-3"
+              >
+                <h6 class="text-truncate mb-3">
+                  Jeans straight efecto vintage
+                </h6>
+                <div class="d-flex justify-content-center">
+                  <h6 class="text-muted mr-2"><del>29,95€</del></h6>
+                  <h6>24,95€</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card product-item small-card border-0 mb-4 mr-2 ml-2">
+              <div
+                class="card-header product-img position-relative overflow-hidden bg-transparent border p-0"
+              >
+                <a href="producto.html">
+                  <img
+                    class="img-fluid w-100"
+                    src="assets/img/3recortado.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div
+                class="card-body border-left border-right border-bottom text-center p-0 pt-4 pb-3"
+              >
+                <h6 class="text-truncate mb-3">Jeans straight wide</h6>
+                <div class="d-flex justify-content-center">
+                  <h6 class="text-muted mr-2"><del>29,95€</del></h6>
+                  <h6>24,95€</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card product-item small-card border-0 mb-4 mr-2 ml-2">
+              <div
+                class="card-header product-img position-relative overflow-hidden bg-transparent border p-0"
+              >
+                <a href="producto.html">
+                  <img
+                    class="img-fluid w-100"
+                    src="assets/img/4recortado.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div
+                class="card-body border-left border-right border-bottom text-center p-0 pt-4 pb-3"
+              >
+                <h6 class="text-truncate mb-3">Jeans pitillo tiro alto</h6>
+                <div class="d-flex justify-content-center">
+                  <h6 class="text-muted mr-2"><del>29,95€</del></h6>
+                  <h6>24,95€</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card product-item small-card border-0 mb-4 mr-2 ml-2">
+              <div
+                class="card-header product-img position-relative overflow-hidden bg-transparent border p-0"
+              >
+                <a href="producto1.html">
+                  <img
+                    class="img-fluid w-100"
+                    src="assets/img/5recortado.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div
+                class="card-body border-left border-right border-bottom text-center p-0 pt-4 pb-3"
+              >
+                <h6 class="text-truncate mb-3">Plumífero corto negro</h6>
+                <div class="d-flex justify-content-center">
+                  <h6 class="text-muted mr-2"><del>142,40€</del></h6>
+                  <h6>132,90€</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card product-item small-card border-0 mb-4 mr-2 ml-2">
+              <div
+                class="card-header product-img position-relative overflow-hidden bg-transparent border p-0"
+              >
+                <a href="producto.html">
+                  <img
+                    class="img-fluid w-100"
+                    src="assets/img/6recortado.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div
+                class="card-body border-left border-right border-bottom text-center p-0 pt-4 pb-3"
+              >
+                <h6 class="text-truncate mb-3">Abrigo tres en uno en camel</h6>
+                <div class="d-flex justify-content-center">
+                  <h6 class="text-muted mr-2"><del>174,90€</del></h6>
+                  <h6>109,90€</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card product-item small-card border-0 mb-4 mr-2 ml-2">
+              <div
+                class="card-header product-img position-relative overflow-hidden bg-transparent border p-0"
+              >
+                <a href="producto2.html">
+                  <img
+                    class="img-fluid w-100"
+                    src="assets/img/7recortado.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div
+                class="card-body border-left border-right border-bottom text-center p-0 pt-4 pb-3"
+              >
+                <h6 class="text-truncate mb-3">Pantalón beis</h6>
+                <div class="d-flex justify-content-center">
+                  <h6 class="text-muted mr-2"><del>59,95€</del></h6>
+                  <h6>34,95€</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card product-item small-card border-0 mb-4 mr-2 ml-2">
+              <div
+                class="card-header product-img position-relative overflow-hidden bg-transparent border p-0"
+              >
+                <a href="producto3.html">
+                  <img
+                    class="img-fluid w-100"
+                    src="assets/img/8recortado.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div
+                class="card-body border-left border-right border-bottom text-center p-0 pt-4 pb-3"
+              >
+                <h6 class="text-truncate mb-3">Pantalón negro con hebilla</h6>
+                <div class="d-flex justify-content-center">
+                  <h6 class="text-muted mr-2"><del>49,95€</del></h6>
+                  <h6>34,95€</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ventajas -->
+    <aside class="container-fluid pt-5">
+      <div class="row px-xl-5 pb-3">
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+          <div
+            class="d-flex align-items-center border mb-4"
+            style="padding: 30px"
+          >
+            <h1 class="fa fa-check text-primary m-0 mr-3"></h1>
+            <h5 class="ventajas m-0">Prendas de calidad</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+          <div
+            class="d-flex align-items-center border mb-4"
+            style="padding: 30px"
+          >
+            <h1 class="fa fa-shipping-fast text-primary m-0 mr-2"></h1>
+            <h5 class="ventajas m-0">Envíos desde 3,50€</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+          <div
+            class="d-flex align-items-center border mb-4"
+            style="padding: 30px"
+          >
+            <h1 class="fas fa-exchange-alt text-primary m-0 mr-3"></h1>
+            <h5 class="ventajas m-0">Devoluciones 14 días</h5>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+          <div
+            class="d-flex align-items-center border mb-4"
+            style="padding: 30px"
+          >
+            <h1 class="fa fa-phone-volume text-primary m-0 mr-3"></h1>
+            <h5 class="ventajas m-0">Atención al cliente 24h</h5>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- fin ventajas -->
+    <!-- footer -->
 
-		<!-- ventajas -->
-		<div class="container-fluid pt-5">
-			<div class="row px-xl-5 pb-3">
-				<div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-					<div
-						class="d-flex align-items-center border mb-4"
-						style="padding: 30px"
-					>
-						<h1 class="fa fa-check text-primary m-0 mr-3"></h1>
-						<h5 class="ventajas m-0">Prendas de calidad</h5>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-					<div
-						class="d-flex align-items-center border mb-4"
-						style="padding: 30px"
-					>
-						<h1 class="fa fa-shipping-fast text-primary m-0 mr-2"></h1>
-						<h5 class="ventajas m-0">Envíos desde 3,50€</h5>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-					<div
-						class="d-flex align-items-center border mb-4"
-						style="padding: 30px"
-					>
-						<h1 class="fas fa-exchange-alt text-primary m-0 mr-3"></h1>
-						<h5 class="ventajas m-0">Devoluciones 14 días</h5>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-12 pb-1">
-					<div
-						class="d-flex align-items-center border mb-4"
-						style="padding: 30px"
-					>
-						<h1 class="fa fa-phone-volume text-primary m-0 mr-3"></h1>
-						<h5 class="ventajas m-0">Atención al cliente 24h</h5>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- fin ventajas -->
-		<!-- footer -->
+    <footer class="container-fluid p-0">
+      <div class="row bg-dark">
+        <p class="mb-md-0 text-center text-light">
+          ENVÍOS GRATIS A PARTIR DE 50€ /// DESCUENTOS EXCLUSIVOS PARA SOCIAS
+        </p>
+      </div>
+      <div class="bg-footer text-dark pt-5">
+        <div class="container">
+          <div class="row">
+            <!--  primera columna -->
+            <div class="col-md-4 mb-5">
+              <div class="d-flex flex-column justify-content-start">
+                <a class="text-dark mb-2" href="index.html">
+                  <img
+                    class="imag-fluid"
+                    src="./assets/img/KIRA_logo.png"
+                    alt=""
+                  />
+                </a>
+                <p class="text-dark mt-2 mb-2">
+                  Dirección: Cervantes, 35, 41100 Coria del Río, Sevilla
+                </p>
+                <p class="text-dark mb-2">Teléfono: 954779387</p>
+              </div>
+            </div>
+            <!-- segunda columna -->
+            <div class="col-md-4 mb-5">
+              <div class="d-flex flex-column justify-content-start">
+                <a class="text-dark mb-2" href="#">
+                  <i class="fa fa-angle-right mr-2"></i>NUESTRA TIENDA
+                </a>
+                <a class="text-dark mb-2" href="#">
+                  <i class="fa fa-angle-right mr-2"></i>ATENCIÓN AL CLIENTE
+                </a>
+                <a class="text-dark mb-2" href="#">
+                  <i class="fa fa-angle-right mr-2"></i>POLÍTICA DE DEVOLUCIONES
+                </a>
+                <a class="text-dark mb-2" href="#">
+                  <i class="fa fa-angle-right mr-2"></i>ENVÍOS
+                </a>
+                <a class="text-dark mb-2" href="#">
+                  <i class="fa fa-angle-right mr-2"></i>PREGUNTAS FRECUENTES
+                </a>
+                <a class="text-dark" href="#">
+                  <i class="fa fa-angle-right mr-2"></i>SÍGUENOS
+                </a>
+                <a class="text-dark" href="#">
+                  <i class="fa fa-angle-right mr-2"></i>CONTACTO
+                </a>
+              </div>
+            </div>
 
-		<footer class="container-fluid p-0">
-			<div class="row bg-dark">
-				<p class="mb-md-0 text-center text-light">
-					ENVÍOS GRATIS A PARTIR DE 50€ /// DESCUENTOS EXCLUSIVOS PARA SOCIAS
-				</p>
-			</div>
-			<div class="bg-footer text-dark pt-5">
-				<div class="container">
-					<div class="row">
-						<!--  primera columna -->
-						<div class="col-md-4 mb-5">
-							<div class="d-flex flex-column justify-content-start">
-								<a class="text-dark mb-2" href="index.html">
-									<img
-										class="imag-fluid"
-										src="./assets/img/KIRA_logo.png"
-										alt=""
-									/>
-								</a>
-								<p class="text-dark mt-2 mb-2">
-									Dirección: Cervantes, 35, 41100 Coria del Río, Sevilla
-								</p>
-								<p class="text-dark mb-2">Teléfono: 954779387</p>
-							</div>
-						</div>
-						<!-- segunda columna -->
-						<div class="col-md-4 mb-5">
-							<div class="d-flex flex-column justify-content-start">
-								<a class="text-dark mb-2" href="#">
-									<i class="fa fa-angle-right mr-2"></i>NUESTRA TIENDA
-								</a>
-								<a class="text-dark mb-2" href="#">
-									<i class="fa fa-angle-right mr-2"></i>ATENCIÓN AL CLIENTE
-								</a>
-								<a class="text-dark mb-2" href="#">
-									<i class="fa fa-angle-right mr-2"></i>POLÍTICA DE DEVOLUCIONES
-								</a>
-								<a class="text-dark mb-2" href="#">
-									<i class="fa fa-angle-right mr-2"></i>ENVÍOS
-								</a>
-								<a class="text-dark mb-2" href="#">
-									<i class="fa fa-angle-right mr-2"></i>PREGUNTAS FRECUENTES
-								</a>
-								<a class="text-dark" href="#">
-									<i class="fa fa-angle-right mr-2"></i>SÍGUENOS
-								</a>
-								<a class="text-dark" href="#">
-									<i class="fa fa-angle-right mr-2"></i>CONTACTO
-								</a>
-							</div>
-						</div>
+            <!-- tercera columna -->
+            <div class="col-md-4 mb-5">
+              <h5 class="text-dark mb-4">
+                ADELÁNTATE A LAS ÚLTIMAS TENDENCIAS Y CONSIGUE OFERTAS
+                EXCLUSIVAS
+              </h5>
+              <h5 class="font-weight-bold text-dark mb-4">
+                SUSCRÍBETE A NUESTRA NEWSLETTER
+              </h5>
+              <form action="">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control border border-dark py-4"
+                    placeholder="Nombre"
+                    required="required"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control border border-dark py-4"
+                    placeholder="Email"
+                    required="required"
+                  />
+                </div>
+                <div>
+                  <button
+                    class="btn btn-dark btn-block border-0 py-3"
+                    type="submit"
+                  >
+                    Subscríbete
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 
-						<!-- tercera columna -->
-						<div class="col-md-4 mb-5">
-							<h5 class="text-dark mb-4">
-								ADELÁNTATE A LAS ÚLTIMAS TENDENCIAS Y CONSIGUE OFERTAS
-								EXCLUSIVAS
-							</h5>
-							<h5 class="font-weight-bold text-dark mb-4">
-								SUSCRÍBETE A NUESTRA NEWSLETTER
-							</h5>
-							<form action="">
-								<div class="form-group">
-									<input
-										type="text"
-										class="form-control border border-dark py-4"
-										placeholder="Nombre"
-										required="required"
-									/>
-								</div>
-								<div class="form-group">
-									<input
-										type="email"
-										class="form-control border border-dark py-4"
-										placeholder="Email"
-										required="required"
-									/>
-								</div>
-								<div>
-									<button
-										class="btn btn-dark btn-block border-0 py-3"
-										type="submit"
-									>
-										Subscríbete
-									</button>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
+      <!-- línea inferior -->
+      <div class="row border-top border-light bg-footer py-4 m-0">
+        <div class="col-md-6 px-xl-0">
+          <p class="mb-md-0 text-center text-md-left text-dark pl-5">
+            &copy;
+            <a class="text-dark font-weight-semi-bold" href="#">Kira Boutique</a
+            >. Todos los derechos reservados. Hecho por
+            <a
+              class="text-dark font-weight-semi-bold"
+              href="https://github.com/LauValenciaD"
+              >Laura Valencia</a
+            >.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- fin footer -->
 
-			<!-- línea inferior -->
-			<div class="row border-top border-light bg-footer py-4 m-0">
-				<div class="col-md-6 px-xl-0">
-					<p class="mb-md-0 text-center text-md-left text-dark pl-5">
-						&copy;
-						<a class="text-dark font-weight-semi-bold" href="#">Kira Boutique</a
-						>. Todos los derechos reservados. Hecho por
-						<a
-							class="text-dark font-weight-semi-bold"
-							href="https://github.com/LauValenciaD"
-							>Laura Valencia</a
-						>.
-					</p>
-				</div>
-			</div>
-		</footer>
-		<!-- fin footer -->
-
-		<!-- script -->
-		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-		<script src="assets/js/slick.js"></script>
-		<script src="assets/js/bootstrap.bundle.min.js"></script>
-		<script src="assets/js/code.js"></script>
-		<!-- fin script -->
-	</body>
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/code.js"></script>
+    <!-- fin script -->
+  </body>
 </html>
