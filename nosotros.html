@@ -28,450 +28,274 @@
   </head>
 
   <body>
-<!-- header -->
-<nav class="navbar navbar-expand-lg navbar-light shadow">
-	<!-- logo -->
-	<div class="container d-flex justify-content-between align-items-center">
-		<a class="navbar-brand logo" href="index.html"
-			><img
-				class="img-fluid"
-				src="./assets/img/KIRA_logo.png"
-				alt=""
-				id="logo"
-		/></a>
-		<!--  menu collapse -->
-		<div
-			class="collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between"
-			id="container_main_nav"
-		>
-			<div class="flex-fill">
-				<ul class="nav navbar-nav mx-lg-auto">
-					<li class="nav-item">
-						<a class="nav-link nav-title" href="index.html">NUEVO</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a
-							href="#"
-							class="nav-link nav-title dropdown-toggle"
-							data-bs-toggle="dropdown"
-						>
-							ROPA
-						</a>
-						<div class="dropdown-menu rounded-0 m-0">
-							<a href="catalogo.html" class="dropdown-item">Camisetas y tops</a>
-							<a href="catalogo.html" class="dropdown-item">Vestidos</a>
-							<a href="catalogo.html" class="dropdown-item">Pantalones y jeans</a>
-							<a href="catalogo.html" class="dropdown-item">Monos</a>
-							<a href="catalogo.html" class="dropdown-item">Abrigos y chaquetas</a>
-							<a href="catalogo.html" class="dropdown-item">Faldas</a>
-							<a href="catalogo.html" class="dropdown-item">Punto</a>
-							<a href="catalogo.html" class="dropdown-item">Ver todo</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a
-							href="#"
-							class="nav-link nav-title dropdown-toggle"
-							data-bs-toggle="dropdown"
-						>
-							COLECCIONES
-						</a>
-						<div class="dropdown-menu rounded-0 m-0">
-							<a href="catalogo.html" class="dropdown-item">Bodas</a>
-							<a href="catalogo.html" class="dropdown-item">Comuniones y bautizos</a>
-							<a href="catalogo.html" class="dropdown-item">Fiesta</a>
-							<a href="catalogo.html" class="dropdown-item">Casual</a>
-							<a href="catalogo.html" class="dropdown-item">Ver todo</a>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link nav-title" href="catalogo.html">ACCESORIOS</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-
-		<!-- Modal para el menú en móvil -->
-		<div
-			class="modal fade"
-			id="mobileMenu"
-			tabindex="-1"
-			aria-hidden="true"
-		>
-			<div class="modal-dialog modal-fullscreen">
-				<div class="modal-content">
-					<div class="modal-body text-left text-dark">
-						<div class="w-100 pt-1 mb-5">
-							<button
-								type="button"
-								class="btn-close"
-								data-bs-dismiss="modal"
-								aria-label="Close"
-							></button>
-						</div>
-						<ul class="list-unstyled">
-							<li><a href="index.html" class="fw-bold">NUEVO</a></li>
-
-							<li>
-								<a href="producto.html" class="fw-bold">ROPA</a>
-								<ul class="list-unstyled ps-3">
-									<li><a href="catalogo.html">Camisetas y tops</a></li>
-									<li><a href="catalogo.html">Vestidos</a></li>
-									<li><a href="catalogo.html">Pantalones y jeans</a></li>
-									<li><a href="catalogo.html">Monos</a></li>
-									<li><a href="catalogo.html">Abrigos y chaquetas</a></li>
-									<li><a href="catalogo.html">Faldas</a></li>
-									<li><a href="catalogo.html">Punto</a></li>
-									<li><a href="catalogo.html">Ver todo</a></li>
-								</ul>
-							</li>
-
-							<li>
-								<a href="#" class="fw-bold">COLECCIONES</a>
-								<ul class="list-unstyled ps-3">
-									<li><a href="catalogo.html">Bodas</a></li>
-									<li><a href="catalogo.html">Comuniones y bautizos</a></li>
-									<li><a href="catalogo.html">Fiesta</a></li>
-									<li><a href="catalogo.html">Casual</a></li>
-									<li><a href="catalogo.html">Ver todo</a></li>
-								</ul>
-							</li>
-
-							<li><a href="catalogo.html" class="fw-bold">ACCESORIOS</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- barra de busqueda -->
-		<div class="search-container ms-lg-3 d-none d-lg-block">
-			<form action="#" method="get">
-				<div class="input-group">
-					<input
-						type="text"
-						class="form-control nav-title"
-						placeholder="Buscar..."
-					/>
-					<div class="input-group-text">
-						<i class="fa fa-fw fa-search"></i>
-					</div>
-				</div>
-			</form>
-		</div>
-		<!-- grupo de iconos -->
-
-		<div class="navbar align-self-center d-flex flex-nowrap">
-			<!-- Botón de menú para móvil -->
-
-			<form
-				class="nav-icon d-inline d-lg-none"
-				action="#" method="get"
-				data-bs-toggle="modal"
-				data-bs-target="#mobileMenu"
-				id="MobileMenuIcon"
-			>
-				<i class="fas fa-bars text-dark"></i>
-				<span
-				class="nav-icon d-inline d-lg-none mr-1"
-				href="#"
-				data-bs-toggle="modal"
-				data-bs-target="#container_search"
-				id="inputMobileSearch"
-			>
-				<i class="fa fa-fw fa-search text-dark"></i>
-			</span> </form>
-			<a class="nav-icon position-relative text-decoration-none" href="carrito.html">
-				<i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-			</a>
-			<a class="nav-icon position-relative text-decoration-none" href="perfil.html">
-				<i class="fa fa-fw fa-user text-dark mr-3"></i>
-			</a>
-		</div>
-	</div>
-</nav>
-
-<!-- fin header -->
-
-<!-- barra de búsqueda desplegable en móvil -->
-<div
-	class="modal fade bg-white"
-	id="container_search"
-	tabindex="-1"
-	dialog
-	aria-hidden="true"
->
-	<div class="modal-dialog modal-lg">
-		<div class="w-100 pt-1 mb-5 text-right">
-			<button
-				type="button"
-				class="btn-close"
-				data-bs-dismiss="modal"
-				aria-label="Cerrar"
-			></button>
-		</div>
-		<div class="search-container big">
-			<form
-				action="#"
-				method="get"
-				class="modal-content modal-body border-0 p-0"
-			>
-				<div class="input-group mb-2">
-					<input
-						type="text"
-						class="form-control"
-						id="inputModalSearch"
-						name="q"
-						placeholder="Buscar..."
-					/>
-					<button type="submit" class="input-group-text">
-						<i class="fa fa-fw fa-search text-white"></i>
-					</button>
-				</div>
-			</form>
-		</div>
-	</div>
-</div>
-    <main>
-    <!-- Carrito -->
-    <div class="container-fluid pt-5">
-      <div class="row px-xl-5">
-        <div class="col-lg-8 table-responsive mb-5">
-          <table class="table table-bordered text-center mb-0">
-            <thead class="bg-white text-dark">
-              <tr>
-                <th colspan="2">Productos</th>
-                <th>Precio</th>
-                <th>Cantidad</th>
-                <th>Talla</th>
-                <th>Quitar</th>
-              </tr>
-            </thead>
-            <tbody class="align-middle">
-              <tr>
-                <td class="align-middle">
-                  Abrigo tres en uno camel
-                </td>
-				<td class="align-middle">
-					<img
-                    src="assets/img/6recortado.jpg"
-                    alt="abrigoCamel"
-                    style="width: 50px"
-                  />
-				</td>
-                <td class="align-middle">109,90 €</td>
-                <td class="align-middle">
-                  <div
-                    class="input-group quantity mx-auto"
-                    style="width: 100px">
-                    <div class="input-group-btn btn-sel-minus">
-                      <span class="btn btn-pink btn-sm">-</span>
-                    </div>
-                    <span
-                      class="form-control form-control-sm text-center quantity-val"
-                      id="var-value"
-                      >1</span>
-                    <div class="input-group-btn btn-sel-plus">
-                      <span class="btn btn-pink btn-sm">+</span>
-                    </div>
-                  </div>
-                </td>
-                <td class="align-middle">S</td>
-                <td class="align-middle">
-                  <button class="btn btn-sm btn-pink">
-                    <i class="fa fa-times"></i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td class="align-middle">
-                  Pantalón corto con hebilla
-                </td>
-				<td class="align-middle">
-					<img
-                    src="assets/img/8recortado.jpg"
-                    alt="abrigoCamel"
-                    style="width: 50px"
-                  />
-				</td>
-                <td class="align-middle">34,95 €</td>
-                <td class="align-middle">
-                  <div
-                    class="input-group quantity mx-auto"
-                    style="width: 100px">
-                  <div
-                    class="input-group quantity mx-auto"
-                    style="width: 100px">
-                    <div class="input-group-btn btn-sel-minus">
-                      <span class="btn btn-pink btn-sm">-</span>
-                    </div>
-                    <span
-                      class="form-control form-control-sm text-center quantity-val"
-                      id="var-value"
-                      >1</span
-                    >
-                    <div class="input-group-btn btn-sel-plus">
-                      <span class="btn btn-pink btn-sm">+</span>
-                    </div>
-                  </div>
-                </td>
-                <td class="align-middle">M</td>
-                <td class="align-middle">
-                  <button class="btn btn-sm btn-pink">
-                    <i class="fa fa-times"></i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td class="align-middle">
-                  Pantalón Beis
-                </td>
-				<td class="align-middle">
-					<img
-                    src="assets/img/7recortado.jpg"
-                    alt="abrigoCamel"
-                    style="width: 50px"
-                  />
-				</td>
-				<td class="align-middle">34,95 €</td>
-                <td class="align-middle">
-					<div
-                    class="input-group quantity mx-auto"
-                    style="width: 100px">
-                    <div class="input-group-btn btn-sel-minus">
-						<span class="btn btn-pink btn-sm">-</span>
-					  </div>
-					  <span
-						class="form-control form-control-sm text-center quantity-val"
-						id="var-value"
-						>1</span
-					  >
-					  <div class="input-group-btn btn-sel-plus">
-						<span class="btn btn-pink btn-sm">+</span>
-					</div>
-                </td>
-                <td class="align-middle">XS</td>
-                <td class="align-middle">
-                  <button class="btn btn-sm btn-pink">
-                    <i class="fa fa-times"></i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td class="align-middle">
-                  Plumífero corto negro
-                </td>
-				<td class="align-middle">
-					<img
-                    src="assets/img/5recortado.jpg"
-                    alt="abrigoCamel"
-                    style="width: 50px"
-                  />
-				</td>
-                <td class="align-middle">132,90 €</td>
-                <td class="align-middle">
-					<div
-                    class="input-group quantity mx-auto"
-                    style="width: 100px">
-                    <div class="input-group-btn btn-sel-minus">
-						<span class="btn btn-pink btn-sm">-</span>
-					  </div>
-					  <span
-						class="form-control form-control-sm text-center quantity-val"
-						id="var-value"
-						>1</span
-					  >
-					  <div class="input-group-btn btn-sel-plus">
-						<span class="btn btn-pink btn-sm">+</span>
-					</div>
-                  </div>
-                </td>
-                <td class="align-middle">L</td>
-                <td class="align-middle">
-                  <button class="btn btn-sm btn-pink">
-                    <i class="fa fa-times"></i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td class="align-middle">
-                  Jeans straight wide
-                </td>
-				<td class="align-middle">
-					<img
-                    src="assets/img/3recortado.jpg"
-                    alt="abrigoCamel"
-                    style="width: 50px"
-                  />
-				</td>
-                <td class="align-middle">24,95 €</td>
-                <td class="align-middle">
-					<div
-                    class="input-group quantity mx-auto"
-                    style="width: 100px">
-                    <div class="input-group-btn btn-sel-minus">
-						<span class="btn btn-pink btn-sm">-</span>
-					  </div>
-					  <span
-						class="form-control form-control-sm text-center quantity-val"
-						id="var-value"
-						>1</span
-					  >
-					  <div class="input-group-btn btn-sel-plus">
-						<span class="btn btn-pink btn-sm">+</span>
-					</div>
-                </td>
-                <td class="align-middle">M</td>
-                <td class="align-middle">
-                  <button class="btn btn-sm btn-pink">
-                    <i class="fa fa-times"></i>
-                  </button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+      <!-- logo -->
+      <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand logo" href="index.html"
+          ><img
+            class="img-fluid"
+            src="./assets/img/KIRA_logo.png"
+            alt=""
+            id="logo"
+        /></a>
+        <!--  menu collapse -->
+        <div
+          class="collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between"
+          id="container_main_nav"
+        >
+          <div class="flex-fill">
+            <ul class="nav navbar-nav mx-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link nav-title" href="index.html">NUEVO</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link nav-title dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                >
+                  ROPA
+                </a>
+                <div class="dropdown-menu rounded-0 m-0">
+                  <a href="catalogo.html" class="dropdown-item"
+                    >Camisetas y tops</a
+                  >
+                  <a href="catalogo.html" class="dropdown-item">Vestidos</a>
+                  <a href="catalogo.html" class="dropdown-item"
+                    >Pantalones y jeans</a
+                  >
+                  <a href="catalogo.html" class="dropdown-item">Monos</a>
+                  <a href="catalogo.html" class="dropdown-item"
+                    >Abrigos y chaquetas</a
+                  >
+                  <a href="catalogo.html" class="dropdown-item">Faldas</a>
+                  <a href="catalogo.html" class="dropdown-item">Punto</a>
+                  <a href="catalogo.html" class="dropdown-item">Ver todo</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link nav-title dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                >
+                  COLECCIONES
+                </a>
+                <div class="dropdown-menu rounded-0 m-0">
+                  <a href="catalogo.html" class="dropdown-item">Bodas</a>
+                  <a href="catalogo.html" class="dropdown-item"
+                    >Comuniones y bautizos</a
+                  >
+                  <a href="catalogo.html" class="dropdown-item">Fiesta</a>
+                  <a href="catalogo.html" class="dropdown-item">Casual</a>
+                  <a href="catalogo.html" class="dropdown-item">Ver todo</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-title" href="catalogo.html"
+                  >ACCESORIOS</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-lg-4">
-          <form class="mb-5" action="">
-            <div class="input-group">
-              <input
-                type="text"
-                class="form-control p-4"
-                placeholder="Cupón de descuento"
-              />
-              <div class="input-group-append">
-                <button class="btn btn-pink">Aplicar cupón</button>
+
+        <!-- Modal para el menú en móvil -->
+        <div
+          class="modal fade"
+          id="mobileMenu"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-body text-left text-dark">
+                <div class="w-100 pt-1 mb-5">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <ul class="list-unstyled">
+                  <li><a href="index.html" class="fw-bold">NUEVO</a></li>
+
+                  <li>
+                    <a href="producto.html" class="fw-bold">ROPA</a>
+                    <ul class="list-unstyled ps-3">
+                      <li><a href="catalogo.html">Camisetas y tops</a></li>
+                      <li><a href="catalogo.html">Vestidos</a></li>
+                      <li><a href="catalogo.html">Pantalones y jeans</a></li>
+                      <li><a href="catalogo.html">Monos</a></li>
+                      <li><a href="catalogo.html">Abrigos y chaquetas</a></li>
+                      <li><a href="catalogo.html">Faldas</a></li>
+                      <li><a href="catalogo.html">Punto</a></li>
+                      <li><a href="catalogo.html">Ver todo</a></li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a href="#" class="fw-bold">COLECCIONES</a>
+                    <ul class="list-unstyled ps-3">
+                      <li><a href="catalogo.html">Bodas</a></li>
+                      <li><a href="catalogo.html">Comuniones y bautizos</a></li>
+                      <li><a href="catalogo.html">Fiesta</a></li>
+                      <li><a href="catalogo.html">Casual</a></li>
+                      <li><a href="catalogo.html">Ver todo</a></li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a href="catalogo.html" class="fw-bold">ACCESORIOS</a>
+                  </li>
+                </ul>
               </div>
-            </div>
-          </form>
-          <div class="card border-secondary mb-5">
-            <div class="card-header bg-white border-1">
-              <h4 class="font-weight-semi-bold m-0">Resumen de compra</h4>
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between mb-3 pt-1">
-                <h6 class="font-weight-medium">Subtotal</h6>
-                <h6 class="font-weight-medium">337,65 €</h6>
-              </div>
-              <div class="d-flex justify-content-between">
-                <h6 class="font-weight-medium">Envio</h6>
-                <h6 class="font-weight-medium">3,50 €</h6>
-              </div>
-            </div>
-            <div class="card-footer border-secondary bg-transparent">
-              <div class="d-flex justify-content-between mt-2">
-                <h5 class="font-weight-bold">Total</h5>
-                <h5 class="font-weight-bold">341,15 €</h5>
-              </div>
-              <button class="btn btn-block btn-pink my-3 py-3">
-                Proceder al pago
-              </button>
             </div>
           </div>
         </div>
+
+        <!-- barra de busqueda -->
+        <div class="search-container ms-lg-3 d-none d-lg-block">
+          <form action="#" method="get">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control nav-title"
+                placeholder="Buscar..."
+              />
+              <div class="input-group-text">
+                <i class="fa fa-fw fa-search"></i>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- grupo de iconos -->
+
+        <div class="navbar align-self-center d-flex flex-nowrap">
+          <!-- Botón de menú para móvil -->
+
+          <form
+            class="nav-icon d-inline d-lg-none"
+            action="#"
+            method="get"
+            data-bs-toggle="modal"
+            data-bs-target="#mobileMenu"
+            id="MobileMenuIcon"
+          >
+            <i class="fas fa-bars text-dark"></i>
+            <span
+              class="nav-icon d-inline d-lg-none mr-1"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#container_search"
+              id="inputMobileSearch"
+            >
+              <i class="fa fa-fw fa-search text-dark"></i>
+            </span>
+          </form>
+          <a
+            class="nav-icon position-relative text-decoration-none"
+            href="carrito.html"
+          >
+            <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+          </a>
+          <a
+            class="nav-icon position-relative text-decoration-none"
+            href="perfil.html"
+          >
+            <i class="fa fa-fw fa-user text-dark mr-3"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- fin header -->
+
+    <!-- barra de búsqueda desplegable en móvil -->
+    <div
+      class="modal fade bg-white"
+      id="container_search"
+      tabindex="-1"
+      dialog
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="w-100 pt-1 mb-5 text-right">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Cerrar"
+          ></button>
+        </div>
+        <div class="search-container big">
+          <form
+            action="#"
+            method="get"
+            class="modal-content modal-body border-0 p-0"
+          >
+            <div class="input-group mb-2">
+              <input
+                type="text"
+                class="form-control"
+                id="inputModalSearch"
+                name="q"
+                placeholder="Buscar..."
+              />
+              <button type="submit" class="input-group-text">
+                <i class="fa fa-fw fa-search text-white"></i>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-    <!-- Cart End -->
+    <main>
+      <!-- Contenedor principal -->
+      <div class="container my-5">
+        <!-- Título -->
+        <h1 class="text-center text-dark mb-4">¿Quiénes somos?</h1>
+
+        <!-- Imagen del equipo -->
+        <div class="text-center mb-4">
+          <img
+            src="assets/img/elEquipo.jpg"
+            alt="El Equipo"
+            class="img-fluid rounded shadow-lg"
+          />
+        </div>
+
+        <!-- Texto descriptivo -->
+        <div class="row">
+          <div class="col">
+            <p class="lead text-justify">
+              En <strong>Kira Boutique</strong>, contamos con más de 30 años de
+              experiencia ofreciendo a nuestras clientas lo mejor en moda
+              femenina. Nuestra tienda online nace con el compromiso de
+              brindarte ropa de alta calidad, elegante y a la vanguardia,
+              pensada para la mujer actual que busca reflejar su personalidad a
+              través de su estilo. Desde nuestros inicios, nos hemos dedicado a
+              crear una experiencia única de compra, con prendas seleccionadas
+              cuidadosamente, que van desde lo clásico hasta lo más moderno,
+              adaptadas a cada ocasión y a todas las mujeres que desean sentirse
+              seguras, cómodas y a la moda.
+            </p>
+            <p class="lead text-justify">
+              En <strong>Kira Boutique</strong>, no solo encuentras ropa, sino
+              también un espacio donde la moda se encuentra con la confianza.
+              Nuestra pasión por el diseño, los materiales y el servicio al
+              cliente nos ha permitido consolidarnos como una referencia de moda
+              femenina con más de tres décadas de historia. Agradecemos tu
+              confianza y nos sentimos felices de acompañarte en cada etapa de
+              tu vida, ofreciéndote las mejores opciones para que siempre luzcas
+              radiante.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- footer -->
 
     <footer class="container-fluid p-0">
