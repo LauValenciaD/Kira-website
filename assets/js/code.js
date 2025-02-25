@@ -96,5 +96,32 @@
       $(this).removeClass("btn-pink");
       $(this).addClass("btn-pink-checked");
     });
+    // Función que comprueba si ya está guardada la cookie
+    function obtenerCookie(nombre) {
+      let cookies = document.cookie.split("; ");
+      for (let i = 0; i < cookies.length; i++) {
+        let cookie = cookies[i].split("=");
+        if (cookie[0] === nombre) return cookie[1];
+      }
+      return null;
+    }
+
+    // Si la cookie ya existe, oculta el banner de cookies
+    if (obtenerCookie("cookie_consent") !== null) {
+      $(".cookies").hide();
+    }
+
+    // Evento para aceptar cookies
+    $(".cookiesSi").click(function () {
+      document.cookie =
+        "cookie_consent=true; path=/; max-age=" + 60 * 60 * 24 * 365;
+      $(".cookies").hide();
+    });
+
+    // Evento para denegar cookies
+    $(".cookiesNo").click(function () {
+      document.cookie = "cookie_consent=false; path=/; max-age=" + 60 * 60 * 24;
+      $(".cookies").hide();
+    });
   });
 })(jQuery);
