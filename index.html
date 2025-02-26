@@ -123,7 +123,7 @@
 											type="button"
 											class="btn-close"
 											data-bs-dismiss="modal"
-											aria-label="Close"
+											aria-label="Cerrar"
 										></button>
 									</div>
 									<ul class="list-unstyled">
@@ -173,6 +173,7 @@
 									type="text"
 									class="form-control nav-title"
 									placeholder="Buscar..."
+									aria-label="barra de búsqueda"
 								/>
 								<div class="input-group-text">
 									<i class="fa fa-fw fa-search"></i>
@@ -200,26 +201,29 @@
 								data-bs-target="#container_search"
 								id="inputMobileSearch"
 							>
-								<i class="fa fa-fw fa-search text-dark"></i>
+								<i class="fa fa-fw fa-search text-dark" role="button"></i>
 							</span>
 						</form>
 						<a
 							class="nav-icon position-relative text-decoration-none"
 							href="carrito.html"
+							aria-label="Ver carrito"
 						>
-							<i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+							<i
+								class="fa fa-fw fa-cart-arrow-down text-dark mr-1"
+								role="button"
+							></i>
 						</a>
 						<a
 							class="nav-icon position-relative text-decoration-none"
 							href="perfil.html"
+							aria-label="Iniciar sesión"
 						>
-							<i class="fa fa-fw fa-user text-dark mr-3"></i>
+							<i class="fa fa-fw fa-user text-dark mr-3" role="button"></i>
 						</a>
 					</div>
 				</div>
 			</nav>
-
-			<!-- fin header -->
 
 			<!-- barra de búsqueda desplegable en móvil -->
 			<div
@@ -250,7 +254,7 @@
 									type="text"
 									class="form-control"
 									id="inputModalSearch"
-									name="q"
+									name="buscador"
 									placeholder="Buscar..."
 								/>
 								<button type="submit" class="input-group-text">
@@ -268,8 +272,9 @@
 				id="container-carousel"
 				class="carousel slide"
 				data-bs-ride="carousel"
+				aria-live="polite"
 			>
-				<ol class="carousel-indicators">
+				<ol class="carousel-indicators" aria-label="Indicadores de carrusel">
 					<li
 						data-bs-target="#container-carousel"
 						data-bs-slide-to="0"
@@ -401,6 +406,7 @@
 					href="#container-carousel"
 					role="button"
 					data-bs-slide="prev"
+					aria-label="Anterior"
 				>
 					<i class="fas fa-chevron-left"></i>
 				</a>
@@ -409,6 +415,7 @@
 					href="#container-carousel"
 					role="button"
 					data-bs-slide="next"
+					aria-label="Siguiente"
 				>
 					<i class="fas fa-chevron-right"></i>
 				</a>
@@ -421,7 +428,7 @@
 					<h2>NOVEDADES</h2>
 				</div>
 				<!-- contenedor slick -->
-				<div class="slider">
+				<div class="slider" aria-live="polite">
 					<!-- tarjetas -->
 					<div>
 						<div class="card product-item small-card border-0 mb-4 mr-2 ml-2">
@@ -560,7 +567,7 @@
 									<img
 										class="img-fluid w-100"
 										src="assets/img/2recortado.JPG"
-										alt=""
+										alt="Jeans straight efecto vintage"
 								/></a>
 							</div>
 							<div
@@ -587,7 +594,7 @@
 									<img
 										class="img-fluid w-100"
 										src="assets/img/3recortado.jpg"
-										alt=""
+										alt="Jeans straight wide"
 								/></a>
 							</div>
 							<div
@@ -612,7 +619,7 @@
 									<img
 										class="img-fluid w-100"
 										src="assets/img/4recortado.jpg"
-										alt=""
+										alt="Jeans pitillo tiro alto"
 									/>
 								</a>
 							</div>
@@ -648,7 +655,7 @@
 									<img
 										class="img-fluid w-100"
 										src="assets/img/1recortado.jpg"
-										alt=""
+										alt="Jeans straight wide"
 								/></a>
 							</div>
 							<div
@@ -673,7 +680,7 @@
 									<img
 										class="img-fluid w-100"
 										src="assets/img/2recortado.JPG"
-										alt=""
+										alt="Jeans straight efecto vintage"
 								/></a>
 							</div>
 							<div
@@ -855,7 +862,7 @@
 							<div
 								class="card-header position-relative overflow-hidden bg-transparent border-0 p-0"
 							>
-								<a href="catalogo.html">
+								<a href="catalogo.html" aria-label="Ver vestidos">
 									<img
 										class="img-fluid w-100"
 										src="assets/img/vestidos.jpg"
@@ -869,7 +876,7 @@
 							<div
 								class="card-header position-relative overflow-hidden bg-transparent border-0 p-0"
 							>
-								<a href="catalogo.html">
+								<a href="catalogo.html" aria-label="Ver abrigos">
 									<img
 										class="img-fluid w-100"
 										src="assets/img/abrigos.jpg"
@@ -883,7 +890,7 @@
 							<div
 								class="card-header position-relative overflow-hidden bg-transparent border-0 p-0"
 							>
-								<a href="catalogo.html">
+								<a href="catalogo.html" aria-label="Ver trajes">
 									<img
 										class="img-fluid w-100"
 										src="assets/img/trajes.jpg"
@@ -897,11 +904,11 @@
 							<div
 								class="card-header position-relative overflow-hidden bg-transparent border-0 p-0"
 							>
-								<a href="catalogo.html">
+								<a href="catalogo.html" aria-label="Ver ropa de punto">
 									<img
 										class="img-fluid w-100"
 										src="assets/img/punto.jpg"
-										alt="punto"
+										alt="Ropa de punto"
 								/></a>
 							</div>
 						</div>
@@ -910,7 +917,7 @@
 			</section>
 		</main>
 		<!-- ventajas -->
-		<aside class="container-fluid pt-5">
+		<aside class="container-fluid pt-5" aria-label="Ventajas de la tienda">
 			<div class="row px-xl-5 pb-3">
 				<div class="col-lg-3 col-md-6 col-sm-12 pb-1">
 					<div
@@ -958,7 +965,7 @@
 		</aside>
 		<!-- fin ventajas -->
 		<!--  cookies -->
-		<section class="cookies bg-dark p-4">
+		<section class="cookies bg-dark p-4" aria-label="Información sobre cookies">
 			<h2 class="text-light text-center">
 				Sobre las cookies en este sitio web
 			</h2>
