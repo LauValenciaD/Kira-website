@@ -233,12 +233,12 @@
 	</div>
 </div>
     <main>
-      <!-- Shop Start -->
+      <!-- Catalogo -->
       <section class="container-fluid pt-5">
         <div class="row px-xl-5">
-          <!-- Shop Sidebar Start -->
-          <div class="col-lg-3 col-md-12">
-            <!-- Price Start -->
+          <!-- Filtros desktop -->
+          <div class="col-lg-3 col-md-12 d-none d-lg-block">
+            <!-- Por precio -->
             <div class="border-bottom mb-4 pb-4">
               <h5 class="font-weight-semi-bold mb-4">Filtrar por precio</h5>
               <form>
@@ -310,9 +310,9 @@
                 </div>
               </form>
             </div>
-            <!-- Price End -->
+            <!-- Fin precio -->
 
-            <!-- Color Start -->
+            <!-- Por color -->
             <div class="border-bottom mb-4 pb-4">
               <h5 class="font-weight-semi-bold mb-4">Filtrar por color</h5>
               <form>
@@ -379,9 +379,9 @@
                 </div>
               </form>
             </div>
-            <!-- Color End -->
+            <!-- Fin color -->
 
-            <!-- Size Start -->
+            <!-- Por talla -->
             <div class="mb-5">
               <h5 class="font-weight-semi-bold mb-4">Filtrar por talla</h5>
               <form>
@@ -442,11 +442,108 @@
                 </div>
               </form>
             </div>
-            <!-- Size End -->
+            <!-- Fin talla -->
           </div>
-          <!-- Shop Sidebar End -->
+          <!-- Fin filtros desktop -->
 
-          <!-- Shop Product Start -->
+          <!--  filtros productos movil  -->
+          <div class="accordion mb-3 d-lg-none" id="filtersAccordion">
+            <!-- Filtro por precio -->
+            <div class="accordion-item container-accordion">
+              <h2 class="accordion-header" id="headingPrice">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrice" aria-expanded="true" aria-controls="collapsePrice">
+                  Filtrar por precio
+                </button>
+              </h2>
+              <div id="collapsePrice" class="accordion-collapse collapse show" aria-labelledby="headingPrice" data-bs-parent="#filtersAccordion">
+                <div class="accordion-body">
+                  <form method="get" action="#">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="price-1">
+                      <label class="form-check-label" for="price-1">1€ - 20€</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="price-2">
+                      <label class="form-check-label" for="price-2">20€ - 40€</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="price-3">
+                      <label class="form-check-label" for="price-3">40€ - 60€</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="price-4">
+                      <label class="form-check-label" for="price-3">60€ - 80€</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="price-5">
+                      <label class="form-check-label" for="price-3">80€ - 120€</label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Filtro por color -->
+            <div class="accordion-item container-accordion">
+              <h2 class="accordion-header" id="headingColor">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseColor" aria-expanded="false" aria-controls="collapseColor">
+                  Filtrar por color
+                </button>
+              </h2>
+              <div id="collapseColor" class="accordion-collapse collapse" aria-labelledby="headingColor" data-bs-parent="#filtersAccordion">
+                <div class="accordion-body">
+                  <form method="get" action="#">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="color-1">
+                      <label class="form-check-label" for="color-1">Negro</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="color-2">
+                      <label class="form-check-label" for="color-2">Blanco</label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Filtro por talla -->
+            <div class="accordion-item container-accordion">
+              <h2 class="accordion-header" id="headingSize">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSize" aria-expanded="false" aria-controls="collapseSize">
+                  Filtrar por talla
+                </button>
+              </h2>
+              <div id="collapseSize" class="accordion-collapse collapse" aria-labelledby="headingSize" data-bs-parent="#filtersAccordion">
+                <div class="accordion-body">
+                  <form method="get" action="#">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="size-1">
+                      <label class="form-check-label" for="size-1">XS</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="size-2">
+                      <label class="form-check-label" for="size-2">S</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="size-2">
+                      <label class="form-check-label" for="size-3">M</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="size-2">
+                      <label class="form-check-label" for="size-4">L</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="size-2">
+                      <label class="form-check-label" for="size-5">XL</label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin filtros movil   -->        
+
+          <!-- Productos -->
           <div class="col-lg-9 col-md-12">
             <div class="row pb-3">
               <div class="col-12 pb-1">
@@ -699,11 +796,11 @@
               </div>
             </div>
           </div>
-          <!-- Shop Product End -->
+          <!-- Fin productos -->
         </div>
       </section>
     </main>
-    <!-- Shop End -->
+    <!-- Fin catalogo -->
 
     <!-- ventajas -->
     <aside class="container-fluid pt-5">
