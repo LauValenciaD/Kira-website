@@ -1,5 +1,15 @@
 # Documentación del Proyecto - Tienda Online Kira
 
+## Versión final. Cambios añadidos
+
+- 4 páginas de diferentes productos.
+- página de catálogo con todos los artículos y filtros de precios, tallas, etc.
+- Página "Nosotros" y "Aviso legal".
+- Log in de usuario con formulario.
+- Barra de cookies en el index.
+- Mejora de accesibilidad en el index.
+- Página de carrito con disintos artículos.
+
 ## Descripción las páginas entregadas
 
 Se ha realizado la página de Inicio con varios carruseles mostrando los productos y la página de Producto, que muestra información detallada sobre el artículo elegido y permite ver las fotos en grande (interactivo), además de seleccionar la cantidad y talla.
