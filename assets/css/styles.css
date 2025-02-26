@@ -320,3 +320,13 @@ footer .bg-dark {
 	right: 0;
 	z-index: 1;
 }
+.saltoContenido {
+	position: absolute;
+	top: -50px;
+	left: 0;
+	background-color: #000;
+	color: #fff;
+}
+.saltoContenido:focus {
+	top: 0;
+}
